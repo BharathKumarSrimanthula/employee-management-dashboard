@@ -1,74 +1,34 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+# Employee Management Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An employee management dashboard built using React, PrimeReact, and other modern libraries. This project allows users to perform CRUD (Create, Read, Update, Delete) operations on employee data and provides a responsive and customizable interface.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Employee Management**: Add, edit, view, and delete employee details.
+- **PrimeReact Components**: Utilizes `DataTable`, `Dialog`, `Button`, and other PrimeReact components for a user-friendly interface.
+- **Form Validation**: Implemented using `react-hook-form` and `yup` for seamless form handling.
+- **Theming**: Customizable themes using PrimeReact's theme options.
+- **Responsive Design**: Built with `primeflex` for a responsive layout.
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React**: Frontend framework for building the user interface.
+- **PrimeReact**: UI component library for modern design elements.
+- **PrimeFlex**: CSS utility library for layout and styling.
+- **Axios**: HTTP client for API integration.
+- **React-Hook-Form**: For managing forms with validation.
+- **Yup**: Schema-based validation library.
+- **React Scripts**: For managing the React app lifecycle.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/employee-management-dashboard.git
+   cd employee-management-dashboard
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Install the dependencies:
+   npm install
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# employee-management-dashboard
->>>>>>> cc24829586f2a731ff6278c5e211427cc4da44d2
+3. Start the development server:
+   npm start
