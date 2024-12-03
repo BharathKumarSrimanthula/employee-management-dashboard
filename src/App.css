@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+:root {
+  --theme-color: #3cd2a5;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #e3e3e3;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title{
+  font-family:'Times New Roman', Times, serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.add-employee-btn {
+  width: 160px;
+  height: 50px;
+}
+
+.add-employee-btn:hover {
+  cursor: pointer;
+}
+
+.p-error {
+  margin: 0 0 10px 0 !important;
+  font-size: 12px !important;
+}
+
+/* dialog footer */
+.dialog-footer {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: flex-end;
 }
 
-.App-link {
-  color: #61dafb;
+.p-button.p-button-success {
+  background: var(--theme-color) !important;
+  border: 1px solid var(--theme-color) !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Employee table */
+.employee-table .p-datatable .p-datatable-wrapper .p-datatable-table .p-datatable-thead tr:nth-child(2) {
+  display: none !important;
+}
+
+.edit-delete-btn {
+  background: none;
+  border: none;
+}
+
+.pi-pencil,
+.pi-trash,
+.pi-arrow-right {
+  color: grey
+}
+
+.pi-pencil:hover,
+.pi-trash:hover,
+.pi-arrow-right:hover {
+  cursor: pointer;
+}
+
+.employee-switch .p-inputswitch {
+  margin-top: 16px !important;
+  margin-left: 10px !important;
+}
+
+/* card */
+.p-card .p-card-content {
+  padding: 0 0 1.25rem 0 !important;
+}
+
+/* input switch */
+.p-inputswitch.p-highlight .p-inputswitch-slider {
+  background-color: var(--theme-color);
 }

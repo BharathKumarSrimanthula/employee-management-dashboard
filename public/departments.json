@@ -1,0 +1,22 @@
+[
+    {
+        "label": "HR",
+        "value": "HR"
+    },
+    {
+        "label": "Engineering",
+        "value": "Engineering"
+    },
+    {
+        "label": "Design",
+        "value": "Design"
+    },
+    {
+        "label": "Marketing",
+        "value": "Marketing"
+    },
+    {
+        "label": "Sales",
+        "value": "Sales"
+    }
+]
