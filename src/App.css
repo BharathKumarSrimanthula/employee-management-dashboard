@@ -35,7 +35,16 @@ body {
   border: 1px solid var(--theme-color) !important;
 }
 
-/* Employee table */
+/* dialog header */
+.p-dialog .p-dialog-header{
+  padding: 1rem 1.25rem !important;
+}
+
+/* dialog content */
+.p-dialog-content p{
+  padding: 0 !important;
+  margin: 0 0 1rem 0 !important;
+}
 .employee-table .p-datatable .p-datatable-wrapper .p-datatable-table .p-datatable-thead tr:nth-child(2) {
   display: none !important;
 }

@@ -9,6 +9,7 @@ import { Calendar } from "primereact/calendar";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 // import departments from './Data/departments.json'
+import ToastComponent from "./ToastComponent";
 
 const schema = yup.object({
   name: yup.string().required("Name is required"),
@@ -36,7 +37,8 @@ const AddEditEmployee = ({
     reset,
   } = useForm({ resolver: yupResolver(schema) });
   const [departments, setDepartments] = useState([]);
-  
+  const [toastMessage, setToastMessage] = useState(null);
+
   const roles = [
     { label: "Manager", value: "Manager" },
     { label: "Developer", value: "Developer" },
@@ -71,31 +73,42 @@ const AddEditEmployee = ({
   }, [employeeToEdit, reset]);
 
   const onSubmit = (employee) => {
-    console.log(employee);
-
     if (employeeToEdit && employeeToEdit.id) {
       setEmployees((prev) =>
         prev.map((emp) =>
           emp.id === employeeToEdit.id ? { ...employee, id: emp.id } : emp
         )
       );
+      setToastMessage({
+        severity: "success",
+        summary: "Updated",
+        detail: `Employee ${employeeToEdit?.name || ""} updated successfully`,
+      });
     } else {
       setEmployees((prev) => [...prev, { ...employee, id: Date.now() }]);
+      setToastMessage({
+        severity: "success",
+        summary: "Created",
+        detail: `Employee created successfully`,
+      });
     }
-    onCloseDialog()
+    onCloseDialog();
   };
-
-  console.log("employees", employees);
-  console.log("employeeToEdit", employeeToEdit);
 
   const onCloseDialog = () => {
     onHide();
     reset();
   };
-  console.log("errors", errors);
 
   return (
     <>
+      <ToastComponent
+        severity={toastMessage?.severity}
+        summary={toastMessage?.summary}
+        detail={toastMessage?.detail}
+        life={3000}
+      />
+
       <Dialog
         header={employeeToEdit ? "Edit employee" : "Add employee"}
         visible={isEmployeeDialogVisible}
